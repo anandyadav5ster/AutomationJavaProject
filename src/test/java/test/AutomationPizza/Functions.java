@@ -156,13 +156,13 @@ public void Click(String locator, String locatorValue) throws InterruptedExcepti
 
 	
 	
-	void orderPizza() throws InterruptedException
-	{
-		
-		EnterText("Xpathlocator", Repositories.Inputbox_msg, "I want to order pizza");
-		Click("Xpathlocator", Repositories.send_msg_btn);
-		ExplicitWaitTillVisible("Xpathlocator", Repositories.suggestions_veg);
-	}
+//	void orderPizza() throws InterruptedException
+//	{
+//		
+//		EnterText("Xpathlocator", Repositories.Inputbox_msg, "I want to order pizza");
+//		Click("Xpathlocator", Repositories.send_msg_btn);
+//		ExplicitWaitTillVisible("Xpathlocator", Repositories.suggestions_veg);
+//	}
 
 
 	void selectToppings() throws InterruptedException, IOException

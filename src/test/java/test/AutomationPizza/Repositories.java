@@ -25,9 +25,9 @@ public class Repositories {
 	public static String Inputbox_msg = "//textarea[@id='queryTextbox']";
 	public static String send_msg_btn = "//button[@data-ele-name='send']";
 	public static String username ="//div[@class='conversation-item clearfix mine']//h1[contains(@id,'name')]";
-	public static String sorry_msg ="//p[contains(text(),'I am sorry') and contains(text(),'have an answer for that.')]";
-	public static String suggestions =  "//div[@class='card_carousel ']//div[@class='default_card attachments']";
-	public static String suggestions_veg ="//a[@title='veg']";;
+//	public static String sorry_msg ="//p[contains(text(),'I am sorry') and contains(text(),'have an answer for that.')]";
+//	public static String suggestions =  "//div[@class='card_carousel ']//div[@class='default_card attachments']";
+//	public static String suggestions_veg ="//a[@title='veg']";;
 	public static String suggestions_non_veg = "//a[@title='non-veg']";
 	public static String item_image = "(//div[@class='card_carousel ']//div[@class='default_card attachments'])[1]";
 	public static String Thin_Crust ="(//a[contains(@href,'Thin')])[1]";

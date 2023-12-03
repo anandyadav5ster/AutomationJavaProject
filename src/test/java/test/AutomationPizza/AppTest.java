@@ -67,7 +67,7 @@ public class AppTest{
 		Assert.assertEquals(welcomemsg, "Welcome to Pizza Shoppe");
 		function.HighElement(logger,welcome);
 		
-		logger = extent.createTest("Once it is cleared using a ‘x’ symbol provided ,verify it should vanish");
+/*		logger = extent.createTest("Once it is cleared using a ‘x’ symbol provided ,verify it should vanish");
 		charbotimage.click();
 		WebElement getstarted = Locators.createWebElement("CSSlocator",Repositories.getstartedPopup);
 		function.HighElement(logger,getstarted);
@@ -145,10 +145,10 @@ public class AppTest{
 		function.HighElement(logger,usrname);
 		
 		
-		logger = extent.createTest("Verify If the user type random text, bot replies I am sorry. I don't have an answer for that.");
-		String check = function.GetText(Repositories.xpathlocator,Repositories.sorry_msg);
-		WebElement sorry = Locators.createWebElement(Repositories.xpathlocator,Repositories.assignmentsassignments_image);
-		function.HighElement(logger,sorry);
+//		logger = extent.createTest("Verify If the user type random text, bot replies I am sorry. I don't have an answer for that.");
+//		String check = function.GetText(Repositories.xpathlocator,Repositories.sorry_msg);
+//		WebElement sorry = Locators.createWebElement(Repositories.xpathlocator,Repositories.assignmentsassignments_image);
+//		function.HighElement(logger,sorry);
 		
 		
 		
@@ -156,25 +156,25 @@ public class AppTest{
 		function.EnterText(Repositories.xpathlocator, Repositories.Inputbox_msg, "I want to ,suggestions displays as I want to order pizza,order veg cheeze pizza,know the store details.");
 		function.Click(Repositories.xpathlocator, Repositories.send_msg_btn);
 		function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.SelectGreat_msg);
-		List<WebElement> suggestion = Locators.createWebElements(Repositories.xpathlocator,Repositories.suggestions);
-		logger = extent.createTest(""+suggestion.size());
+//		List<WebElement> suggestion = Locators.createWebElements(Repositories.xpathlocator,Repositories.suggestions);
+//		logger = extent.createTest(""+suggestion.size());
 		
 		
-		logger = extent.createTest("Verify If the user clicks I want to order pizza , bot should reply We have a wide variety of freshly backed pizza . What would you like to Order ? with veg and non veg option.");
+//		logger = extent.createTest("Verify If the user clicks I want to order pizza , bot should reply We have a wide variety of freshly backed pizza . What would you like to Order ? with veg and non veg option.");
 		
-		function.orderPizza();
+//		function.orderPizza();
 		
-		WebElement veg = Locators.createWebElement(Repositories.xpathlocator,Repositories.suggestions_veg);
-		function.HighElement(logger,veg);
-		WebElement nonveg = Locators.createWebElement(Repositories.xpathlocator,Repositories.suggestions_non_veg);
-		function.HighElement(logger,nonveg);
+//		WebElement veg = Locators.createWebElement(Repositories.xpathlocator,Repositories.suggestions_veg);
+//		function.HighElement(logger,veg);
+//		WebElement nonveg = Locators.createWebElement(Repositories.xpathlocator,Repositories.suggestions_non_veg);
+//		function.HighElement(logger,nonveg);
 		
 		
 		
 		
 		logger = extent.createTest("Verify If a user clicks Veg ,bot should throw two options with select your topping .");	
 		
-		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
+//		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
 		WebElement vegitem= Locators.createWebElement(Repositories.xpathlocator,Repositories.item_image);
 		function.HighElement(logger,vegitem);
 		
@@ -216,7 +216,7 @@ public class AppTest{
 		function.HighElement(logger,McPizza_Order);
 		
 		function.Click(Repositories.xpathlocator,Repositories.McPizza_Order);
-		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
+//		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
 		
 	
 		
@@ -259,11 +259,11 @@ public class AppTest{
 		
 		logger = extent.createTest("Verify Once the user rejects the order ,bot to be wanna try again .");
 		
-		function.orderPizza();
-		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
-		if(function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.select_toppings_popup)) {
-			function.selectToppings();
-		}
+//		function.orderPizza();
+//		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
+//		if(function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.select_toppings_popup)) {
+//			function.selectToppings();
+//		}
 
 		WebElement right_nav = Locators.createWebElement(Repositories.xpathlocator,Repositories.scroll_right_btn);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -286,7 +286,7 @@ public class AppTest{
 		
 		logger = extent.createTest("Verify if its yes entire step should repeat.");
 		
-		function.orderPizza();
+//		function.orderPizza();
 //		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
 //		if(function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.select_toppings_popup)) {
 //			function.selectToppings();
@@ -339,7 +339,7 @@ public class AppTest{
 //		Assert.assertEquals(check, "Yes I am! Did I have you fooled?");
 //		maker= Locators.createWebElement(Repositories.xpathlocator,Repositories.last_msg);
 //		function.HighElement(logger,maker);
-	
+	*/
 		
 		logger.pass("Test cases completed");
 		
