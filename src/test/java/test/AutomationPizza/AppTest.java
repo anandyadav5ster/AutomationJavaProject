@@ -287,21 +287,20 @@ public class AppTest{
 		logger = extent.createTest("Verify if its yes entire step should repeat.");
 		
 		function.orderPizza();
-		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
-		if(function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.select_toppings_popup)) {
-			function.selectToppings();
-		}
-		function.scrollToElement(Repositories.xpathlocator,Repositories.select_toppings_popup);
-	
-		function.Click(Repositories.xpathlocator, Repositories.Thin_Crust);
-		
-		function.Click(Repositories.xpathlocator, Repositories.size_small);
-		function.Click(Repositories.xpathlocator, Repositories.yes_btn);
-	
+//		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
+//		if(function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.select_toppings_popup)) {
+//			function.selectToppings();
+//		}
+//		function.scrollToElement(Repositories.xpathlocator,Repositories.select_toppings_popup);
+//	
+//		function.Click(Repositories.xpathlocator, Repositories.Thin_Crust);
 //		
+//		function.Click(Repositories.xpathlocator, Repositories.size_small);
+//		function.Click(Repositories.xpathlocator, Repositories.yes_btn);
+	
 		
-		Pizza_order_desc= Locators.createWebElement(Repositories.xpathlocator,Repositories.Pizza_order_desc);
-		function.HighElement(logger,Pizza_order_desc);
+//		Pizza_order_desc= Locators.createWebElement(Repositories.xpathlocator,Repositories.Pizza_order_desc);
+//		function.HighElement(logger,Pizza_order_desc);
 //		function.Click(Repositories.xpathlocator, Repositories.suggestions_veg);
 //		if(function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.select_toppings_popup)) {
 //			function.selectToppings();
