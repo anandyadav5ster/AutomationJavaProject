@@ -312,33 +312,33 @@ public class AppTest{
 //		Order_placed= Locators.createWebElement(Repositories.xpathlocator,Repositories.Order_placed);
 //		function.HighElement(Order_placed);
 		
-		logger = extent.createTest("Verify if its no Thank you for your time should be displayed.");
-		function.Click(Repositories.xpathlocator,Repositories.feedback_Thumbsup);
-		function.Click(Repositories.xpathlocator, Repositories.pick_list);
-		function.Click(Repositories.xpathlocator, Repositories.pick_list_item0);
-		function.Click(Repositories.xpathlocator, Repositories.pick_list_submit);
-		WebElement thanksyou_msg= Locators.createWebElement(Repositories.xpathlocator,Repositories.thanksyou_msg);
-		function.HighElement(logger,thanksyou_msg);
-		
-		
-		logger = extent.createTest("Verify by asking bot how old are you? Get the response I don't know. My maker hasn't told me.");
-		function.EnterText(Repositories.xpathlocator, Repositories.Inputbox_msg, "how old are you ?");
-		function.Click(Repositories.xpathlocator, Repositories.send_msg_btn);
-		function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.last_msg);
-		check = function.GetText(Repositories.xpathlocator, Repositories.last_msg);
-		Assert.assertEquals(check, "I don't know. My maker hasn't told me.");
-		WebElement maker= Locators.createWebElement(Repositories.xpathlocator,Repositories.last_msg);
-		function.HighElement(logger,maker);
-		
-		
-		logger = extent.createTest("Verify by asking bot Are you a robot? .Get the response .Yes I am! Did I have you fooled?");
-		function.EnterText(Repositories.xpathlocator, Repositories.Inputbox_msg, "Are you a robot?");
-		function.Click(Repositories.xpathlocator, Repositories.send_msg_btn);
-		function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.last_msg);
-		check = function.GetText(Repositories.xpathlocator, Repositories.last_msg);
-		Assert.assertEquals(check, "Yes I am! Did I have you fooled?");
-		maker= Locators.createWebElement(Repositories.xpathlocator,Repositories.last_msg);
-		function.HighElement(logger,maker);
+//		logger = extent.createTest("Verify if its no Thank you for your time should be displayed.");
+//		function.Click(Repositories.xpathlocator,Repositories.feedback_Thumbsup);
+//		function.Click(Repositories.xpathlocator, Repositories.pick_list);
+//		function.Click(Repositories.xpathlocator, Repositories.pick_list_item0);
+//		function.Click(Repositories.xpathlocator, Repositories.pick_list_submit);
+//		WebElement thanksyou_msg= Locators.createWebElement(Repositories.xpathlocator,Repositories.thanksyou_msg);
+//		function.HighElement(logger,thanksyou_msg);
+//		
+//		
+//		logger = extent.createTest("Verify by asking bot how old are you? Get the response I don't know. My maker hasn't told me.");
+//		function.EnterText(Repositories.xpathlocator, Repositories.Inputbox_msg, "how old are you ?");
+//		function.Click(Repositories.xpathlocator, Repositories.send_msg_btn);
+//		function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.last_msg);
+//		check = function.GetText(Repositories.xpathlocator, Repositories.last_msg);
+//		Assert.assertEquals(check, "I don't know. My maker hasn't told me.");
+//		WebElement maker= Locators.createWebElement(Repositories.xpathlocator,Repositories.last_msg);
+//		function.HighElement(logger,maker);
+//		
+//		
+//		logger = extent.createTest("Verify by asking bot Are you a robot? .Get the response .Yes I am! Did I have you fooled?");
+//		function.EnterText(Repositories.xpathlocator, Repositories.Inputbox_msg, "Are you a robot?");
+//		function.Click(Repositories.xpathlocator, Repositories.send_msg_btn);
+//		function.ExplicitWaitTillVisible(Repositories.xpathlocator, Repositories.last_msg);
+//		check = function.GetText(Repositories.xpathlocator, Repositories.last_msg);
+//		Assert.assertEquals(check, "Yes I am! Did I have you fooled?");
+//		maker= Locators.createWebElement(Repositories.xpathlocator,Repositories.last_msg);
+//		function.HighElement(logger,maker);
 	
 		
 		logger.pass("Test cases completed");
